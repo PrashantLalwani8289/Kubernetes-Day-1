@@ -22,7 +22,7 @@ Kubernetes is a powerful container orchestration platform, and mastering it requ
 ## 🛠️ How to Use This Repository
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/kubernetes-learning.git
+   git clone https://github.com/PrashantLalwani8289/Kubernetes-Learning
    ```
 2. Navigate to different sections to explore Kubernetes concepts.
 3. Feel free to fork, contribute, or share your feedback!
