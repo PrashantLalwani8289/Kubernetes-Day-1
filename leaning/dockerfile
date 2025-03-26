@@ -1,0 +1,6 @@
+FROM apache/spark:latest
+
+WORKDIR /app
+COPY pyspark_pipeline.py .
+
+CMD ["/opt/spark/bin/spark-submit", "pyspark_pipeline.py"]
