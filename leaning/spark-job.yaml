@@ -1,0 +1,20 @@
+apiVersion: "sparkoperator.k8s.io/v1beta2"
+kind: SparkApplication
+metadata:
+  name: pyspark-job
+  namespace: default
+spec:
+  type: Python
+  mode: cluster
+  image: pyspark-pipeline:latest
+  mainApplicationFile: local:///app/pyspark_pipeline.py
+  sparkVersion: "3.3.1"
+  restartPolicy:
+    type: Never
+  driver:
+    cores: 1
+    memory: "512m"
+  executor:
+    cores: 2
+    instances: 2
+    memory: "1g"
